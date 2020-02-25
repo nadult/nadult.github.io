@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image on Hazed Visions Games</title>
+    <link>https://nadult.github.io/tags/image/</link>
+    <description>Recent content in Image on Hazed Visions Games</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://nadult.github.io/tags/image/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Frontier: isometric turn-based strategy game (WIP)</title>
+      <link>https://nadult.github.io/projects/frontier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nadult.github.io/projects/frontier/</guid>
+      <description>Just define the image URL in the content’s front matter, the featured image will be displayed as the background.
+For example:
+---images:-https://picsum.photos/1024/768/?random---This is an array, you can set multiple urls, only the first url will be used. These images is also used in Twitter Cards and the Open Graph metadata.</description>
+    </item>
+    
+    <item>
+      <title>Geocompute: prototyper for geometric computations (WIP)</title>
+      <link>https://nadult.github.io/projects/geocompute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nadult.github.io/projects/geocompute/</guid>
+      <description>Just define the image URL in the content’s front matter, the featured image will be displayed as the background.
+For example:
+---images:-https://picsum.photos/1024/768/?random---This is an array, you can set multiple urls, only the first url will be used. These images is also used in Twitter Cards and the Open Graph metadata.</description>
+    </item>
+    
+    <item>
+      <title>Integer-based 2D CSG</title>
+      <link>https://nadult.github.io/demos/csg2d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nadult.github.io/demos/csg2d/</guid>
+      <description>Just define the image URL in the content’s front matter, the featured image will be displayed as the background.
+For example:
+---images:-https://picsum.photos/1024/768/?random---This is an array, you can set multiple urls, only the first url will be used. These images is also used in Twitter Cards and the Open Graph metadata.</description>
+    </item>
+    
+    <item>
+      <title>Integer-based 2D CSG</title>
+      <link>https://nadult.github.io/demos/geocompute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nadult.github.io/demos/geocompute/</guid>
+      <description>Just define the image URL in the content’s front matter, the featured image will be displayed as the background.
+For example:
+---images:-https://picsum.photos/1024/768/?random---This is an array, you can set multiple urls, only the first url will be used. These images is also used in Twitter Cards and the Open Graph metadata.</description>
+    </item>
+    
+    <item>
+      <title>FreeFT: isometric action game engine</title>
+      <link>https://nadult.github.io/projects/freeft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nadult.github.io/projects/freeft/</guid>
+      <description>FreeFT is an open-source, real-time, isometric action game engine. inspired by Fallout Tactics, a game from 2001 created by an Australian company, Micro Forte.
+It requires assets from this game, so to run the demos you have to own Fallout Tactics.
+TODO: filmiki z vimeo TODO: screenshoty
+---images:---This is an array, you can set multiple urls, only the first url will be used. These images is also used in Twitter Cards and the Open Graph metadata.</description>
+    </item>
+    
+    <item>
+      <title>Snail: real-time raytracer</title>
+      <link>https://nadult.github.io/projects/ray_tracer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nadult.github.io/projects/ray_tracer/</guid>
+      <description>FreeFT is an open-source, real-time, isometric action game engine. inspired by Fallout Tactics, a game from 2001 created by an Australian company, Micro Forte.
+It requires assets from this game, so to run the demos you have to own Fallout Tactics.
+Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website.</description>
+    </item>
+    
+  </channel>
+</rss>
