@@ -94,7 +94,7 @@
 			<graph_colors layers="l2" vertex="0 0 0 0" edge="0 0 0 0"/>
 			<graph_colors layers="l3" vertex="0 0 0 0" edge="0.992157 1 0 1"/>
 		</input>
-		<vis_config pos="2.372366 0 -0.506447" zoom="43.390507" axis1="pos_x" axis2="pos_z" _any_type="fwk::PlaneCamera"/>
+		<vis_config pos="2.372366 0 -0.275982" zoom="43.390507" axis1="pos_x" axis2="pos_z" _any_type="fwk::PlaneCamera"/>
 	</node>
 	<node id="12" type="eval" rect="270 -110 499 26" name="makeVoronoiGraph" op="makeVoronoiGraph">
 		<input node="10"/>
