@@ -1,0 +1,118 @@
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------ Shared rules -------------------------------- */
+
+/* Theme heavily inspired by Hugo Hermit:
+ * https://github.com/Track3/hermit */
+
+body {
+  color: #e8eef2;
+  background-color: #485791;
+  font-family: trebuchet ms,Verdana,verdana ref,segoe ui,Candara,lucida grande,lucida sans unicode,lucida sans,Tahoma,sans-serif;
+  letter-spacing: 0.06em;
+}
+
+.title_date {
+  color: #888888;
+  float: right;
+}
+
+a {
+  color: #e8eef2;
+  border: none;
+  box-shadow: inset 0 -4px 0 #4f66c1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 1px #fff;
+}
+
+div.vimeo {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.vimeo iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border:0;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* --------------------------- Main page rules -------------------------------- */
+
+div#outer {
+  width: 100%;
+  max-width: 1400px;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+}
+
+div#inner {
+	width: 100%;
+}
+
+.main-toc {
+  display: flex;
+  background-color: #384781;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-toc > div {
+  background-image: linear-gradient(to bottom right, #384781, #485791);
+  border: 8px solid #485791;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  flex: 1 1 35%;
+}
+
+
+@media only screen and (max-width: 1280px)
+{
+  .main-toc { flex-direction: column; }
+  .main-toc > div { }
+}
+
+.main .toc_title a {
+  word-wrap: break-word;
+  border: none;
+}
+
+.main .toc_desc span {
+	float: left;
+	clear: none;
+}
+
+.main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------- Sub page rules -------------------------------- */
+
+.sub-page h1 {
+  font-size: 2em;
+}
+
+.sub-page main {
+  width: 93%;
+  margin: 0 auto;
+  max-width: 720px;
+  line-height: 1.6;
+}
+
+.sub-page img {
+	width: 100%;
+	display: block;
+}
