@@ -13,7 +13,7 @@
 				<img src="https://nadult.github.io/images/lucid/lucid1.jpg"/>
 			</a>
 			<p>Lucid is a fully software-based rasterizer which runs on Vulkan&apos;s compute shaders. It was designed for efficient rendering of transparent objects. No pre-sorting of geometry is required: all sorting happens in the pipeline.</p>
-			<p>Lucid rasterizer is quite efficient: compared to hardware-based simple alpha-blended rasterization it is only about 2-5 times slower (depending on the scene / view). It means that it is on par with state-of-the-art software rasterizers even though it has additional sorting phase.
+			<p>Lucid rasterizer is quite efficient: compared to hardware-based simple alpha-blended rasterization it is on average only about 3 times slower. It means that it is on par with state-of-the-art software rasterizers even though it has additional sorting phase.
 </p>
 			<a href="https://research.nvidia.com/sites/default/files/pubs/2011-08_High-Performance-Software-Rasterization/laine2011hpg_paper.pdf">[High-Performance Software Rasterization on GPUs - LINK]</a>
 			<br/>
@@ -31,78 +31,80 @@
 					<td>Boxes     </td>
 					<td>6K   </td>
 					<td>12M </td>
-					<td>1547 </td>
-					<td>397 </td>
-					<td>3.90</td>
+					<td>1537 </td>
+					<td>400 </td>
+					<td>3.84</td>
 				</tr>
 				<tr>
 					<td>Bunny     </td>
 					<td>72K  </td>
 					<td>740K</td>
-					<td>352  </td>
+					<td>328  </td>
 					<td>74  </td>
-					<td>4.76</td>
+					<td>4.43</td>
 				</tr>
 				<tr>
 					<td>Conference</td>
 					<td>167K </td>
 					<td>5M  </td>
-					<td>1149 </td>
-					<td>236 </td>
-					<td>4.87</td>
+					<td>1074 </td>
+					<td>240 </td>
+					<td>4.47</td>
 				</tr>
 				<tr>
 					<td>Dragon    </td>
 					<td>437K </td>
 					<td>666K</td>
-					<td>843  </td>
-					<td>382 </td>
-					<td>2.21</td>
+					<td>813  </td>
+					<td>378 </td>
+					<td>2.15</td>
 				</tr>
 				<tr>
 					<td>Hairball  </td>
 					<td>1495K</td>
 					<td>22M </td>
-					<td>13392</td>
-					<td>3211</td>
-					<td>4.17</td>
+					<td>12129</td>
+					<td>3253</td>
+					<td>3.73</td>
 				</tr>
 				<tr>
 					<td>Powerplant</td>
 					<td>6400K</td>
 					<td>18M </td>
-					<td>10362</td>
-					<td>4345</td>
-					<td>2.38</td>
+					<td>9649</td>
+					<td>4320</td>
+					<td>2.23</td>
 				</tr>
 				<tr>
 					<td>Sponza    </td>
 					<td>132K </td>
 					<td>24M </td>
-					<td>3559 </td>
-					<td>1287</td>
-					<td>2.77</td>
+					<td>3491 </td>
+					<td>1280</td>
+					<td>2.73</td>
 				</tr>
 				<tr>
 					<td>White oak </td>
 					<td>20K  </td>
 					<td>120M</td>
-					<td>12858</td>
-					<td>5670</td>
-					<td>2.27</td>
+					<td>12711</td>
+					<td>5667</td>
+					<td>2.24</td>
 				</tr>
 			</table>
 			<p align="center">Rendering times (microseconds) in 2560x1330 resolution on RTX 3050 TI.</p>
 			<br/>
 			<p>Lucid rasterizer demo for windows:</p>
-			<a href="https://nadult.github.io/lucid/lucid_beta.zip">[lucid_beta.zip] (2 MB)</a>
+			<a href="https://nadult.github.io/lucid/lucid_beta.zip">[lucid_beta.zip] (4 MB)</a>
 			<br/>
-			<a href="https://nadult.github.io/lucid/lucid_scenes.zip">[lucid_scenes.zip] (341 MB)</a>
+			<a href="https://www49.zippyshare.com/v/oRtmNeKb/file.html">[lucid_scenes.zip] (341 MB)</a>
 			<br/>
-			<a href="https://nadult.github.io/lucid/lucid_scenes.7z">[lucid_scenes.7z] (215 MB)</a>
+			<a href="https://www49.zippyshare.com/v/eoXORzxa/file.html">[lucid_scenes.7z] (215 MB)</a>
 			<br/>
-			<p>Running: download and unpack lucid_beta.zip and either lucid_scenes.zip or lucid_scenes.7z. Lucid should run on recent GPUs from all vendors (both integrated &amp; discrete GPUs). At least 2GB of VRAM is needed to run all scenes. If you have less than that, hairball, powerplant &amp; san-miguel scenes might crash the app.</p>
-			<p>Lucid demo is still in beta phase. There are some issues with Vulkan memory allocator, which manifest on some GPUs with scene geometry being destroyed, strange textures or blinking. In case of not enough memory, application may crash or work slowly. All rasterizer options except debug_* should work. Demo was tested on RTX 3050 TI, AMD RX 6700 XT, and AMD Radeon RX Vega 8.</p>
+			<a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170"> [MSVC++ Redist 2015-2022] (Optional)</a>
+			<br/>
+			<p>Running: download and unpack lucid_beta.zip and either lucid_scenes.zip or lucid_scenes.7z. In case of problems with missing dlls, make sure that MSVC++ redist is installed. Lucid should run on recent AMD &amp; NVidia GPUs (both integrated &amp; discrete GPUs). At least 2GB of VRAM is needed to run all scenes. If you have less than that, hairball, powerplant &amp; san-miguel scenes might crash the app.</p>
+			<p>Lucid demo is still in beta phase, so some bugs are expected, especially on AMD platforms, because most testing &amp; development was done on NVIDIA GPU. In case of not enough memory, application may crash or work slowly. All rasterizer options except debug_* should work. Demo was tested on RTX 3050 TI, AMD RX 6700 XT, and AMD Radeon RX Vega 8.</p>
 			<br/>
 			<p>Article with algorithm description: IN PROGRESS...</p>
 			<br/>
