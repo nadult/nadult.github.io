@@ -13,7 +13,7 @@
 				<img src="https://nadult.github.io/images/lucid/lucid1.jpg"/>
 			</a>
 			<p>Lucid is a fully software-based rasterizer which runs on Vulkan&apos;s compute shaders. It was designed for efficient rendering of transparent objects. No pre-sorting of geometry is required: all sorting happens in the pipeline.</p>
-			<p>Lucid rasterizer is quite efficient: compared to hardware-based simple alpha-blended rasterization it is on average only about 3 times slower. It means that it is on par with state-of-the-art software rasterizers even though it has additional sorting phase.
+			<p>Lucid rasterizer is quite efficient: compared to hardware-based simple alpha-blended rasterization it is on average only about 3 times slower. It means that it is on par with state-of-the-art gpu software rasterizers even though it additionaly does sorting.
 </p>
 			<a href="https://research.nvidia.com/sites/default/files/pubs/2011-08_High-Performance-Software-Rasterization/laine2011hpg_paper.pdf">[High-Performance Software Rasterization on GPUs - LINK]</a>
 			<br/>
@@ -111,7 +111,7 @@
 			<a href="https://www97.zippyshare.com/v/p86EBpUX/file.html">[buddha.7z] (11 MB)</a>
 			<br/>
 			<p>Running: download and unpack lucid_beta.zip and either lucid_scenes.zip or lucid_scenes.7z. In case of problems with missing dlls, make sure that MSVC++ redist is installed. Lucid should run on recent AMD &amp; NVidia GPUs (both integrated &amp; discrete GPUs). At least 2GB of VRAM is needed to run all scenes. If you have less than that, hairball, powerplant &amp; san-miguel scenes might crash the app.</p>
-			<p>Lucid demo is still in beta phase, so some bugs are expected, especially on AMD platforms, because most testing &amp; development was done on NVIDIA GPU. In case of not enough memory, application may crash or work slowly. All rasterizer options except debug_* should work. Demo was tested on RTX 3050 TI, AMD RX 6700 XT, and AMD Radeon RX Vega 8.</p>
+			<p>Lucid demo is still in beta phase, so some bugs are expected, especially on AMD platforms, because most testing &amp; development was done on NVIDIA GPU. In case of not enough memory, application may crash or work slowly. All rasterizer options except debug_* should work. Demo was tested on RTX 3050 TI, AMD RX 6700 XT, and AMD Radeon RX Vega 8. For now Lucid will not work on Intel GPUs, that&apos;s still work in progress. Additionally, on AMD platforms Lucid might work slowly, because some drivers may have problems with Vulkan&apos;s subgroup instructions. In our tests Lucid works efficiently on Ubuntu 22.04, but on Windows 10, it&apos;s about 2x slower, on the same GPU (RX 6700 XT).</p>
 			<br/>
 			<p>Article with algorithm description: IN PROGRESS...</p>
 			<br/>
