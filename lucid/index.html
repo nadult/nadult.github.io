@@ -8,12 +8,14 @@
 	</head>
 	<body class="sub-page">
 		<main>
-			<h1>Lucid: compute-shader based software rasterizer for transparency</h1>
+			<h1>Lucid: real-time software transparency rasterizer based on Vulkan compute shaders</h1>
 			<a href="https://nadult.github.io/images/lucid/lucid1.jpg">
 				<img src="https://nadult.github.io/images/lucid/lucid1.jpg"/>
 			</a>
-			<p>Lucid is a fully software-based rasterizer which runs on Vulkan&apos;s compute shaders. It was designed for efficient rendering of transparent objects. No pre-sorting of geometry is required: all sorting happens in the pipeline.</p>
-			<p>Lucid rasterizer is quite efficient: compared to hardware-based simple alpha-blended rasterization it is on average only about 3 times slower. It means that it is on par with state-of-the-art gpu software rasterizers even though it additionaly does sorting.
+			<p>Lucid is a fully software-based rasterizer designed specifically for efficient rendering of transparent objects. No pre-sorting of geometry is required: all sorting happens in the pipeline.</p>
+			<a href="https://github.com/nadult/lucid">[GITHUB LINK]</a>
+			<br/>
+			<p>Lucid rasterizer is quite efficient: compared to hardware-based simple alpha-blended rasterization it is on average only about 3 times slower. It means that it is on par with state-of-the-art gpu software rasterizers even though it additionaly does sorting. For scenes with lots of tiny triangles it can even be faster than hardware.
 </p>
 			<a href="https://research.nvidia.com/sites/default/files/pubs/2011-08_High-Performance-Software-Rasterization/laine2011hpg_paper.pdf">[High-Performance Software Rasterization on GPUs - LINK]</a>
 			<br/>
@@ -90,6 +92,14 @@
 					<td>12912</td>
 					<td>6065</td>
 					<td>2.13</td>
+				</tr>
+				<tr>
+					<td>Thai      </td>
+					<td>2390K</td>
+					<td>1124K</td>
+					<td>7171</td>
+					<td>7223</td>
+					<td>0.99</td>
 				</tr>
 			</table>
 			<p align="center">Rendering times (microseconds) in 2560x1330 resolution on RTX 3050 TI.</p>
