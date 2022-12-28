@@ -3,22 +3,22 @@
 		<meta charset="UTF-8"/>
 		<meta name="author" content="Krzysztof Jakubowski"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Lucid: compute-shader based software rasterizer for transparency</title>
+		<title>Lucid: real-time GPU software transparency rasterizer</title>
 		<link rel="stylesheet" type="text/css" href="https://nadult.github.io/style.css"/>
 	</head>
 	<body class="sub-page">
 		<main>
-			<h1>Lucid: real-time software transparency rasterizer based on Vulkan compute shaders</h1>
+			<h1>Lucid: real-time GPU software transparency rasterizer</h1>
 			<a href="https://nadult.github.io/images/lucid/lucid1.jpg">
 				<img src="https://nadult.github.io/images/lucid/lucid1.jpg"/>
 			</a>
-			<p>Lucid is a fully software-based rasterizer designed specifically for efficient rendering of transparent objects. No pre-sorting of geometry is required: all sorting happens in the pipeline.</p>
+			<p>Lucid is a fully software-based rasterizer designed specifically for efficient rendering of transparent objects. Most of Lucid logic is implemented in Vulkan compute shaders. No pre-sorting of geometry is required: all sorting happens in the pipeline.</p>
 			<a href="https://github.com/nadult/lucid">[GITHUB LINK]</a>
 			<br/>
-			<p>Lucid rasterizer is quite efficient: compared to hardware-based simple alpha-blended rasterization it is on average only about 3 times slower. It means that it is on par with state-of-the-art gpu software rasterizers even though it additionaly does sorting. For scenes with lots of tiny triangles it can even be faster than hardware.
-</p>
-			<a href="https://research.nvidia.com/sites/default/files/pubs/2011-08_High-Performance-Software-Rasterization/laine2011hpg_paper.pdf">[High-Performance Software Rasterization on GPUs - LINK]</a>
+			<a href="https://nadult.github.io/lucid/paper_draft.html">[PAPER DRAFT]</a>
 			<br/>
+			<p>Lucid rasterizer is quite efficient: compared to hardware-based simple alpha-blended rasterization it is on average only about 3 times slower. It can be much faster than other techniques for exact transparency rendering. For scenes with lots of tiny triangles it can even be faster than hardware.
+</p>
 			<br/>
 			<table>
 				<tr>
