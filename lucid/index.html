@@ -3,21 +3,21 @@
 		<meta charset="UTF-8"/>
 		<meta name="author" content="Krzysztof Jakubowski"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Lucid: real-time GPU software transparency rasterizer</title>
+		<title>LucidRaster: real-time GPU software rasterizer for exact OIT</title>
 		<link rel="stylesheet" type="text/css" href="https://nadult.github.io/style.css"/>
 	</head>
 	<body class="sub-page">
 		<main>
-			<h1>Lucid: real-time GPU software transparency rasterizer</h1>
+			<h1>LucidRaster: real-time GPU software rasterizer for exact OIT</h1>
 			<a href="https://nadult.github.io/images/lucid/lucid1.jpg">
 				<img src="https://nadult.github.io/images/lucid/lucid1.jpg"/>
 			</a>
-			<p>Lucid is a fully software-based rasterizer designed specifically for efficient rendering of transparent objects. Most of Lucid logic is implemented in Vulkan compute shaders. No pre-sorting of geometry is required: all sorting happens in the pipeline.</p>
+			<p>Lucid is a software rasterizer running on a gpu designed specifically to support efficient order independent transparency. Most of Lucid logic is implemented in Vulkan compute shaders.</p>
 			<a href="https://github.com/nadult/lucid">[GITHUB LINK]</a>
 			<br/>
 			<a href="https://nadult.github.io/lucid/paper_draft.html">[PAPER DRAFT]</a>
 			<br/>
-			<p>Lucid rasterizer is quite efficient: compared to hardware-based simple alpha-blended rasterization it is on average only about 3 times slower. It can be much faster than other techniques for exact transparency rendering. For scenes with lots of tiny triangles it can even be faster than hardware.
+			<p>Lucid rasterizer is quite efficient: it&apos;s faster than high-quality approximations like Moment-based OIT and it&apos;s exact. Compared to hardware-based simple alpha-blended rasterization it is on average only about 3 times slower. For scenes with lots of tiny triangles it can even be faster than hardware.
 </p>
 			<br/>
 			<table>
@@ -122,8 +122,6 @@
 			<br/>
 			<p>Running: download and unpack lucid_beta.zip and either lucid_scenes.zip or lucid_scenes.7z. In case of problems with missing dlls, make sure that MSVC++ redist is installed. Lucid_beta will also work without downloaded scenes, but only one simple procedurally-generated scene will be available.</p>
 			<p>Lucid rasterizer demo is still work in progress, so some bugs are expected. Testing &amp; development was mainly done on NVIDIA GPU (GTX 3050 Ti). All rasterizer options except debug_* should work. For now Lucid will not work on Intel GPUs, and on AMD GPUs on Windows it might work slowly. It seems that AMD drivers for windows don&apos;t support Vulkan&apos;s subgroup instructions as well as the linux driver. In our tests on a computer with RX 6700 XT, Lucid works efficiently on Ubuntu 22.04, but on Windows 10, it&apos;s about 2x-3x slower.</p>
-			<br/>
-			<p>Article with algorithm description: IN PROGRESS...</p>
 			<br/>
 			<br/>
 			<p>More screen-shots:</p>
